@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-learning website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <link rel="stylesheet" href="registration.css" /> -->
+    <link rel="stylesheet" href="css/StudentDash.css">
+    <link rel="stylesheet" href="css/Login.css">
+    
+    
+  </head>
+  <body>
+    <header>
+
+      <!-- Humburger -->
+      <div class="hamburger">
+       <i class="fa-solid fa-bars-staggered" data-visible="true"></i>
+         <i class="fa-solid fa-xmark" data-visible="false"></i>
+     </div>
+  <nav  class="desktop-menu">
+     <div class="logo">
+       <!-- <h1>LEARN <em class="logo-Online">ONLINE</em></h1> -->
+       <img src="images/logoooooooooooooo.png" alt="Logo" />
+     </div>
+     <ul class="navbar">
+       <li><a href="index.html">Home</a></li>
+       <li><a href="courses.html">Courses</a></li>
+       <li><a href="about.html">About Us</a></li>
+       <li><a href="contact.html">Contact Us</a></li>
+     </ul>
+  
+     <div class="btn">
+       <div class="user-dash">aki</div>
+       <a href="login.html"  class="signIn">Sign In</a>
+       <a href="registration.html" class="signUp" >Sign Up</a>
+       <a href="#" class="Logout" style="display: none;">Logout</a>
+     </div>
+  
+   </nav>
+  
+   <div class="mobile-menu">
+     <div class="logo">
+       <a href="index.html">
+        <img src="images/logoooooooooooooo.png" alt="Logo" />
+       </a>
+     </div>
+  
+       
+       <!-- right menu -->
+       <div class="menu-link" data-visible="false">
+         <div class="menu">
+           <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="courses.html">Courses</a></li>
+             <li><a href="about.html">AboutUs</a></li>
+             <li><a href="contact.html">ContactUs</a></li>
+           </ul>
+  
+           <div class="btn">
+            <div class="user-dash">aki</div>
+            <a href="login.html"  class="signIn">Sign In</a>
+            <a href="registration.html" class="signUp" >Sign Up</a>
+            <a href="#" class="Logout" style="display: none;">Logout</a>
+          </div>
+    
+   </div>
+   </div>
+  </div>
+   </header>
+
+    
+      <div class="auth-container">
+        <h1 id="form-title">Sign In</h1>
+        <form id="authForm">
+          <input type="text" id="username" placeholder="Enter your username" style="display: none;"/>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+          />
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm your password"
+            style="display: none"
+          />
+          <button type="submit" id="authButton" class="loginbtn">Sign In</button>
+        </form>
+        <p id="authSwitch">
+          New to LearnOnline?  <a href="registration.html">Register now</a>
+        </p>
+      </div>
+      <footer class="footer">
+        <div class="footer-contents">
+          <span>© 2024 LearnOnline Courses. All rights reserved.</span>
+          <ul class="social-media">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-whatsapp"></a></li>
+            <li><a href="#" class="fa fa-youtube"></a></li>
+          </ul>
+        </div>
+      </footer>
+
+  <script src="js/login-1.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+  </body>
+</html>

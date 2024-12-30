@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-learning website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/StudentDash.css">
+    <!-- <link rel="stylesheet" href="course.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+  </head>
+  <body>
+    <header>
+
+      <!-- Humburger -->
+      <div class="hamburger">
+       <i class="fa-solid fa-bars-staggered" data-visible="true"></i>
+         <i class="fa-solid fa-xmark" data-visible="false"></i>
+     </div>
+  <nav  class="desktop-menu">
+     <div class="logo">
+       <!-- <h1>LEARN <em class="logo-Online">ONLINE</em></h1> -->
+       <img src="images/logoooooooooooooo.png" alt="Logo" />
+     </div>
+     <ul class="navbar">
+       <li><a href="index.html">Home</a></li>
+       <li><a href="courses.html">Courses</a></li>
+       <li><a href="about.html">About Us</a></li>
+       <li><a href="contact.html">Contact Us</a></li>
+     </ul>
+  
+     <div class="btn">
+       <div class="user-dash">aki</div>
+       <a href="login.html"  class="signIn">Sign In</a>
+       <a href="registration.html" class="signUp" >Sign Up</a>
+       <a href="#" class="Logout" style="display: none;">Logout</a>
+     </div>
+  
+   </nav>
+  
+   <div class="mobile-menu">
+     <div class="logo">
+       <a href="index.html">
+        <img src="images/logoooooooooooooo.png" alt="Logo" />
+       </a>
+     </div>
+  
+       
+       <!-- right menu -->
+       <div class="menu-link" data-visible="false">
+         <div class="menu">
+           <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="courses.html">Courses</a></li>
+             <li><a href="about.html">AboutUs</a></li>
+             <li><a href="contact.html">ContactUs</a></li>
+           </ul>
+  
+           <div class="btn">
+            <div class="user-dash">aki</div>
+            <a href="login.html"  class="signIn">Sign In</a>
+            <a href="registration.html" class="signUp" >Sign Up</a>
+            <a href="#" class="Logout" style="display: none;">Logout</a>
+          </div>
+    
+   </div>
+   </div>
+  </div>
+   </header>
+
+    <div class="dashcontainer">
+      <div class="dashboard">
+        <ul>
+          <li><a href="#myCourses" class="links">My Courses</a></li>
+          <li><a href="#myAccount" class="links" id="myProfile">My Profile</a></li>
+          <li><a href="#help" class="links">Quick Help</a></li>
+        </ul>
+      </div>
+      <div class="dashDisplay">
+        <div id="myCourses" class="orderdetails">
+          <h4>My Courses</h4>
+          <h6>These are the courses you've enrolled in:</h6>
+          <div class="ordercards"></div>
+        </div>
+        <div id="myAccount" class="orderdetails" style="display: none;">
+          <h4>Student Profile</h4>
+          <!-- Display User Info -->
+          <div class="user-info">
+            <div class="user-valu-disp">
+               <p><strong>Full name:</strong> <span id="displayFullname">Loading...</span></p>
+            <p><strong>Username:</strong> <span id="displayUsername">Loading...</span></p>
+            <p><strong>Email:</strong> <span id="displayEmail">Loading...</span></p>
+            <h5>Enrolled Courses:</h5>
+            
+           
+            </div>
+            <div class="table-student">
+              <table>
+              
+                <thead>
+              <tr>
+                <th>Course Name</th>
+                <th>Instructor</th>
+                <th>Price</th>
+                
+              </tr>
+              </thead>
+              <tbody id="enrolledCoursesList">
+              
+              </tbody>
+              </table>
+            </div>
+           
+              <!-- Courses will be dynamically added here -->
+            
+          </div>
+         
+        </div>
+        <div id="help" class="orderdetails" style="display: none;">
+          <h4>Need any help?</h4>
+          <h6>Contact us for support</h6>
+         
+          <!-- WhatsApp Contact -->
+          <div class="whatsapp-contact">
+            <div class="whatsapp-icon">
+              <p>If you need assistance, please reach out to us:</p>
+            <a href="https://wa.me/252613355008" target="_blank">
+              <img src="https://static1.anpoimages.com/wordpress/wp-content/uploads/2023/12/whatsapp-logo-with-green-background.jpg" alt="WhatsApp Logo"  />
+              
+            </a>
+          </div>
+          <div class="whatsapp-qr">
+            <p>Scan the QR code below to chat with us on WhatsApp:</p>
+            <a href="https://wa.me/252613355008" target="_blank">
+              <img src="https://preview.redd.it/3ipyc7vvofh61.png?width=392&format=png&auto=webp&s=5cd31d0bebfc7d899e80d074ac1f1900b3ccccef" alt="WhatsApp QR Code" width="150" height="150" />
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+   <script src="js/StudentDash.js"></script>
+   <script src="js/security.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-learning website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/coursedisplay.css" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+   
+    <header>
+
+      <!-- Humburger -->
+      <div class="hamburger">
+       <i class="fa-solid fa-bars-staggered" data-visible="true"></i>
+         <i class="fa-solid fa-xmark" data-visible="false"></i>
+     </div>
+  <nav  class="desktop-menu">
+     <div class="logo">
+       <!-- <h1>LEARN <em class="logo-Online">ONLINE</em></h1> -->
+        <img src="images/leanOnline.png" alt="">
+     </div>
+     <ul class="navbar">
+       <li><a href="index.html">Home</a></li>
+       <li><a href="courses.html">Courses</a></li>
+       <li><a href="about.html">About Us</a></li>
+       <li><a href="contact.html">Contact Us</a></li>
+     </ul>
+  
+     <div class="btn">
+       <div class="user-dash">aki</div>
+       <a href="login.html"  class="signIn">Sign In</a>
+       <a href="registration.html" class="signUp" >Sign Up</a>
+       <a href="#" class="Logout" style="display: none;">Logout</a>
+     </div>
+  
+   </nav>
+  
+   <div class="mobile-menu">
+     <div class="logo">
+       <a href="index.html">
+         <img src="images/leanOnline.png" alt="">
+       </a>
+     </div>
+  
+       
+       <!-- right menu -->
+       <div class="menu-link" data-visible="false">
+         <div class="menu">
+           <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="courses.html">Courses</a></li>
+             <li><a href="about.html">AboutUs</a></li>
+             <li><a href="contact.html">ContactUs</a></li>
+           </ul>
+  
+           <div class="btn">
+            <div class="user-dash">aki</div>
+            <a href="login.html"  class="signIn">Sign In</a>
+            <a href="registration.html" class="signUp" >Sign Up</a>
+            <a href="#" class="Logout" style="display: none;">Logout</a>
+          </div>
+    
+   </div>
+   </div>
+  </div>
+   </header>
+
+    <div class="content">
+     <div class="overlay">
+      <div class="left-content" >
+        <h4>Home // courses Display</h4>
+        <p class="courseName"></p>
+      </div>
+    </div>
+    </div>
+    <main>
+      <div class="coursesdetail">
+        <div class="right-description">
+          <div class="card">
+            <h1 style="text-align: center; padding: 5px;">lessons</h1>
+          </div>
+        </div>
+        <div class="left-Description">
+          <h5 class="titleplay">
+          </h5>
+          <div class="image-container">
+            <iframe
+              style="border: none"
+              class="playvideo"
+              allowfullscreen
+              width="100%"
+              height="600"
+              src=""
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-contents">
+        <span>© 2024 LearnOnline Courses. <br> All rights reserved.</span>
+        <ul class="social-media">
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-whatsapp"></a></li>
+          <li><a href="#" class="fa fa-youtube"></a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/coursedisplay.js"></script>
+    <script src="js/courses.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/security.js"></script>
+  </body>
+</html>
